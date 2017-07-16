@@ -17,8 +17,6 @@ class Auth extends Sippy_controller {
         $this->sess = new Session_helper;
     }
 
-    //todo - add validation class to do validation in Sippy_controller
-
     public function login() {
         if(Auth_helper::logged_in()) $this->redirect('main');
         $data['messSuccess'] = $this->flash->message('success');
