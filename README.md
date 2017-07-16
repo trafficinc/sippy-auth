@@ -1,5 +1,5 @@
 # sippy-auth
-Authentication for Sippy Framework
+Simple authentication for Sippy Framework
 
 # Authentication system for Sippy framework
 
