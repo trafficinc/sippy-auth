@@ -204,27 +204,5 @@ Note: This reset code will expire after '. date('j M Y') .'.';
 
     }
 
-    public function resetpass() {
-        //password reset
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            if ($_POST['csrf'] === $this->sess->get('csrf_token') ) {
-                $password       = $_POST['password'];
-                $confpassword   = $_POST['confpassword'];
-
-                $validator = $this->validate($_POST, [
-                    'password'      => 'required',
-                    'confpassword'  => 'required'
-                ]);
-
-                if (count($validator) > 0) {
-                    $data['errors'] = $validator;
-                } else {
-                    //process
-                }
-            }
-        }
-    }
-
-
 }
 
