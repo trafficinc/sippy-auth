@@ -128,7 +128,7 @@ If you did not request to reset your password then please just ignore this email
 Note: This reset code will expire after '. date('j M Y') .'.';
 
                         $send = Mailer::make()
-                            ->setTo('einnor212@gmail.com', 'Einnor')
+                            ->setTo('you@gmail.com', 'You')
                             ->setFrom('sippy@noreply.com', 'Sippy')
                             ->setSubject('Reset your Password')
                             ->setMessage($message)
